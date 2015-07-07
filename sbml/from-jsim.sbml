@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sbml xmlns="http://www.sbml.org/sbml/level2/version4" level="2" version="4">
+  <model>
+    <listOfParameters>
+      <parameter id="d2" value="0.2" constant="true"/>
+      <parameter id="d1" value="1" constant="true"/>
+      <parameter id="y3" value="1" constant="false"/>
+      <parameter id="y2delayed" constant="false"/>
+      <parameter id="y2" value="1" constant="false"/>
+      <parameter id="y1" value="1" constant="false"/>
+      <parameter id="y1delayed" constant="false"/>
+    </listOfParameters>
+    <listOfRules>
+      <rateRule variable="y1">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> y1delayed </ci>
+        </math>
+      </rateRule>
+      <rateRule variable="y2">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <apply>
+            <plus/>
+            <ci> y1delayed </ci>
+            <ci> y2delayed </ci>
+          </apply>
+        </math>
+      </rateRule>
+      <rateRule variable="y3">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <ci> y2 </ci>
+        </math>
+      </rateRule>
+      <assignmentRule variable="y1delayed">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn> 1 </cn>
+              <apply>
+                <lt/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                <ci> d1 </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <apply>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/delay"> delay </csymbol>
+                <ci> y1 </ci>
+                <ci> d1 </ci>
+              </apply>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+      <assignmentRule variable="y2delayed">
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+          <piecewise>
+            <piece>
+              <cn> 1 </cn>
+              <apply>
+                <lt/>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/time"> t </csymbol>
+                <ci> d2 </ci>
+              </apply>
+            </piece>
+            <otherwise>
+              <apply>
+                <csymbol encoding="text" definitionURL="http://www.sbml.org/sbml/symbols/delay"> delay </csymbol>
+                <ci> y2 </ci>
+                <ci> d2 </ci>
+              </apply>
+            </otherwise>
+          </piecewise>
+        </math>
+      </assignmentRule>
+    </listOfRules>
+  </model>
+</sbml>
+

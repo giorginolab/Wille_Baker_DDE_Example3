@@ -1,0 +1,12 @@
+[LONGITUDINAL]
+input = {tau1,tau2}
+
+EQUATION:
+t0 = 0
+f1_0 = 1
+f2_0 = 1
+f3_0 = 1
+ddt_f1 = delay(f1,tau1)
+ddt_f2 = delay(f1,tau1) + delay(f2,tau2)
+ddt_f3 = f2
+

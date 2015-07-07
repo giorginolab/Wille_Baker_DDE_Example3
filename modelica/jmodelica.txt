@@ -1,0 +1,6 @@
+from pymodelica import compile_fmu
+
+myfmu=compile_fmu('dde','dde.mo')
+
+delay not supported?!?
+
