@@ -12,10 +12,12 @@ Many solvers struggle at tracking the solution through discontinuities and histo
 
 See also https://sites.google.com/site/tonigiorgino/blog/exactsolutionoftheddeofwilleandbaker
 
-2.	3.5	6.16667	10.875	19.175
-3.71414	10.5606	28.0053	71.2265	176.423
-3.18164	9.77286	27.7379	74.163	190.344
+This is the numeric approximation of the exact solution:
 
+    t    1           2           3        4         5
+    x    2.	     3.5	 6.16667 10.875	   19.175
+    y    3.71414    10.5606	28.0053	 71.2265  176.423
+    z    3.18164     9.77286	27.7379	 74.163	  190.344
 
 
 
