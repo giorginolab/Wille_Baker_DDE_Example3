@@ -14,10 +14,14 @@ See also https://sites.google.com/site/tonigiorgino/blog/exactsolutionoftheddeof
 
 This is the numeric approximation of the closed-form solution:
 
-    t    1         2         3        4         5
-    x    2.	       3.5	     6.16667 10.875	   19.175
-    y    3.71414  10.5606	28.0053	 71.2265  176.423
-    z    3.18164   9.77286	27.7379	 74.163	  190.344
+|	t	|	x	|	y	|	z	|
+|---|---|---|---|		 
+|	1	|	2	|	3.71414	|	3.18164	|
+|	2	|	3.5	|	10.5606	|	9.77286	|
+|	3	|	6.16667	|	28.0053	|	27.7379	|
+|	4	|	10.875	|	71.2265	|	74.163	|
+|	5	|	19.175	|	176.423	|	190.344	|
+
 
 
 
