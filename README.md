@@ -6,13 +6,13 @@ TG 8 may 2014
 
 Various implementations of the DDE example provided in [1]. 
 
-It has a (lengthy) exact solution, provided in the Mathematica notebook. 
+It has a (lengthy) exact (closed-form) solution, provided in the Mathematica notebook. 
 
 Many solvers struggle at tracking the solution through discontinuities and history.
 
 See also https://sites.google.com/site/tonigiorgino/blog/exactsolutionoftheddeofwilleandbaker
 
-This is the numeric approximation of the exact solution:
+This is the numeric approximation of the closed-form solution:
 
     t    1         2         3        4         5
     x    2.	       3.5	     6.16667 10.875	   19.175
