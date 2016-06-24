@@ -16,6 +16,8 @@
 %                                             ^lags
 %                                                     ^hist (??)
 % plot(sol.x,sol.y)
+% sol.y(end,:)
+%        19.201   175.854   189.782
 
 
 function dydt = solveWilleBaker(t,y,Z)

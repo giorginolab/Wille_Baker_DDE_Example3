@@ -12,7 +12,7 @@ Many solvers struggle at tracking the solution through discontinuities and histo
 
 See also https://sites.google.com/site/tonigiorgino/blog/exactsolutionoftheddeofwilleandbaker
 
-This is the numeric approximation of the closed-form solution:
+This is the numeric evaluation of the closed-form solution:
 
 |	t	|	x	|	y	|	z	|
 |---|---|---|---|		 
