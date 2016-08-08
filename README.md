@@ -3,16 +3,14 @@ Simple delay-differential equation testbench
 
 TG 8 may 2014
 
+Willé and Baker in [1] present (among others) a simple delay-differential equation system as a test case for their solver.   Many solvers struggle at tracking the solution through discontinuities and history. 
 
-Various implementations of the DDE example provided in [1]. 
-
-It has a (lengthy) exact (closed-form) solution, provided in the Mathematica notebook. 
-
-Many solvers struggle at tracking the solution through discontinuities and history.
+In this repository, I test how several solvers and languages fare on that example.   
 
 See also https://sites.google.com/site/tonigiorgino/blog/exactsolutionoftheddeofwilleandbaker
 
-This is the numeric evaluation of the closed-form solution:
+Note that the equations have a (monstre) closed-form solution; it is provided in the Mathematica notebook. 
+This is how the closed-form solution evaluates numerically:
 
 |	t	|	x	|	y	|	z	|
 |---|---|---|---|		 
@@ -21,7 +19,6 @@ This is the numeric evaluation of the closed-form solution:
 |	3	|	6.16667	|	28.0053	|	27.7379	|
 |	4	|	10.875	|	71.2265	|	74.163	|
 |	5	|	19.175	|	176.423	|	190.344	|
-
 
 
 
