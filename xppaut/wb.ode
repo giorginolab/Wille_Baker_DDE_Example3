@@ -10,8 +10,9 @@ z(0)=1
 @ total=5,bound=1e6
 @ xp=t,xp2=t,xp3=t
 @ yp=x,yp2=y,yp3=z
+@ dt=0.0001
 
-@ delay=2
+@ delay=1
 
 done
 
