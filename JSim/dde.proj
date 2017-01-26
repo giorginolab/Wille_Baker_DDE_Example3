@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<JSim version="2.12">
-  <project name="proj1">
+<JSim version="2.16">
+  <project name="proj2">
     <plotpage name="plotpage_1">
       <control name="desc" value=""/>
       <control name="confPlot" value="0"/>
@@ -143,6 +143,8 @@ math wb {
         <control name="traceVars" value=""/>
         <control name="ignoreAllOverspec" value="false"/>
         <control name="ignoreAllUnderspec" value="false"/>
+        <control name="splitBlocks" value="false"/>
+        <control name="parallelize" value="false"/>
       </options>
       <vars name="vars"/>
       <parset name="last">
@@ -222,7 +224,6 @@ math wb {
           <pargroup name="memory">
             <control name="storeGrids" value="all"/>
             <control name="t.nth" value="1"/>
-            <control name="time.nth" value="1"/>
           </pargroup>
         </pargroups>
         <vars name="vars">
@@ -340,6 +341,7 @@ math wb {
         <control name="alg" value="simplex"/>
         <control name="maxCalls" value="50"/>
         <control name="maxIters" value="10"/>
+        <control name="maxStaticIters" value="0"/>
         <control name="errTol" value=".001"/>
         <control name="stepTol" value="1E-6"/>
         <control name="gradTol" value="1E-6"/>
